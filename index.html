@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link src="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<header>
+<header class="headerContainer">
     <figure>
         <img src="images/logo.png">
-        <h1>Cameron Jennings</h1>
     </figure>
-    <figure>
+    <figure class="titleContainer">
         <img src="images/titleoutline.png">
+        <h1 class="title">Cameron Jennings</h1>
     </figure>
-    <figure>
-        <img src="images/thumbs up 1.png">
-        <caption class="headerCaption">Quality Guaranteed</caption>
+    <figure class="qualityContainer">
+        <img src="images/thumbsUp.png">
+        <p class="headerCaption">Quality Guaranteed</p>
     </figure>
 </header>
     <hr>
@@ -27,7 +27,7 @@
     </article>
     <hr>
     <nav class="navigation">
-        <button onlclick="dropdown()" class="drpbtn"></button>
+        <button onclick='myFunction()' class="drpbtn">dropdown</button>
         <div id="dropdown" class="dropdownContent">
             <a href="resume.html">Resume</a>
             <a href="project1.html">Project: Trion Supercars</a>
@@ -43,9 +43,9 @@
     </nav>
 <body>
     <section class="intro">
-        <figure>
+        <figure class="introImage">
             <img src="images/portrait.jpg">
-            <caption>Picture of Cameron Jennings</caption>
+            <p>Picture of Cameron Jennings</p>
         </figure>
         <article class="introText">
             <h2>Introduction</h2>
@@ -56,14 +56,14 @@
             <p>
                 Cameron Jennings has kept a 4.0+ GPA since his freshman year by taking a total of three college level classes (AP World, AP Biology, & AP Calculus AB) and two weighted classes (Principles of Engineering & Engineering Design and Development). 
             </p>
+            <a href="aboutMe.html"><h2 class="aboutLink">About Cameron Jennings</h2></a>
         </article>
-        <h2><a>About Cameron Jennings</a></h2>
     </section>
     <hr>
     <section>
         <h2>Projects and Works</h2>
         <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
+            <!-- Full-width images with number and p text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
               <img src="img1.jpg" style="width:100%">
@@ -82,11 +82,11 @@
         </div>  
         <figure>
             <img>
-            <caption>Writing Sample: ####</caption>
+            <p>Writing Work: 1984 Essay</p>
         </figure>
         <figure>
             <img>
-            <caption>Writing Sample: ####</caption>
+            <p>Writing Work: Perseverance Essay</p>
         </figure>
     </section>
     <section>
