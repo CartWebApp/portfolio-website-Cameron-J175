@@ -1,3 +1,7 @@
+* {
+    color: black;
+}
+
 body {
     background-image: url(/images/bground.jpg);
     background-size: cover;
@@ -33,9 +37,9 @@ a:visited {
     color: darkgrey;
 }
 
-/* normal above this */
+/* normal above this---------------------------------------------------------------------------------------------------------------------- */
 
-/* ids above this */
+/* ids above this------------------------------------------------------------------------------------------------------------------------ */
 
 .headerContainer{
     display: flex;
@@ -108,51 +112,72 @@ a:visited {
     color: darkgrey;
 }
 
-/* classes above this */
-
-
 /* Dropdown Button */
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    background-color: rgba(0,0,0,0);
+    border: solid 1px black;
     cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
+    width: 100%;
+    height: 100%;
+}
+ 
+.dropdown-content {
     position: absolute;
-    background-color: #f1f1f1;
+    top: 100%;
+    left: 0;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropbtn img {
+    margin-right: 5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+  margin-left: 95%;
+  position: fixed;
+  width: 5%;
+  height: 8%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  border: solid 1px black;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+}
+
+/* classes above this------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
 
