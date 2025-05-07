@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<header>
+<header class="headerContainer">
     <figure>
         <img src="images/logo.png">
-        <h1>Smart Homes</h1>
     </figure>
-    <figure>
+    <figure class="titleContainer">
         <img src="images/titleoutline.png">
+        <h1 class="title">Smart Homes</h1>
     </figure>
-    <figure>
-        <img src="images/thumbs up 1.png">
+    <figure class="qualityContainer">
+        <img src="images/thumbsUp.png">
         <p class="headerCaption">Quality Guaranteed</p>
     </figure>
 </header>
@@ -25,9 +26,10 @@
     <p class="smallText">Price: 3 Cents</p>
 </article>
 <hr>
-<nav class="navigation">
-    <button onlclick="dropdown()" class="drpbtn"></button>
-    <div id="dropdown" class="dropdownContent">
+<nav class="dropdown">
+    <button onclick="myFunction()" class="dropbtn"><img src="/images/arrow.png" height="100%" widt="100%"></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="/index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="project1.html">Project: Trion Supercars</a>
         <a href="project2.html">Project: Budget Calculator</a>
@@ -41,18 +43,19 @@
     </div>
 </nav>
 <body>
+    <h2 class="projectTitles">Project Desription</h2>
     <section class="projectContainer">
         <article>
-            <p>
+            <p class="projectDesc">
                 This was the very first website Jennings ever developed. For this site he used only CSS and HTML, so it lacks any form of interactivity, animation, or responsiveness. This website’s theme was based off of the Ray Bradbury short story: “There Will Come Soft Rains.” This website is vital to show where Jennings started when coding and how much he has grown within the past 7 months (as of May of 2025). 
             </p>
         </article>
         <figure>
-            <img src="/images/smartHomes.png">
+            <img src="/images/smartHomes.jpg" width="800px" class="projectImg">
         </figure>
     </section>
     <section>
-        <h2><a href="https://smarthomestwcsr.netlify.app/">Click Here to View Site</a></h2>
+        <h2 class="projectTitles"><a href="https://smarthomestwcsr.netlify.app/">Click Here to View Site</a></h2>
     </section>
     <hr>
     <hr>

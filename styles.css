@@ -9,7 +9,8 @@ body {
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
 
 h1{
@@ -17,7 +18,7 @@ h1{
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 caption{
@@ -25,7 +26,7 @@ caption{
 }
 
 a {
-    transition: 0.3s;
+    transition: ease-out 0.3s;
     color: black;
 }
 
@@ -33,13 +34,27 @@ a:hover {
     color:darkgrey;
 }
 
-a:visited {
-    color: darkgrey;
+hr {
+    border-color: black;
 }
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
 
 /* normal above this---------------------------------------------------------------------------------------------------------------------- */
 
 /* ids above this------------------------------------------------------------------------------------------------------------------------ */
+
+.largeLinkText {
+    font-size: 1.5rem;
+    display: flex;
+    margin-top: 50%;
+    font-weight: bold;
+}
 
 .headerContainer{
     display: flex;
@@ -103,35 +118,28 @@ a:visited {
     padding-left: 1.5rem;
 }
 
-.aboutLink{
-    padding-top: 42.5%;
-    transition: 0.3s;
-}
-
-.aboutlink:hover{
-    color: darkgrey;
-}
-
 /* Dropdown Button */
 .dropbtn {
+    background-image: url(/images/bground.jpg);
     background-color: rgba(0,0,0,0);
     border: solid 1px black;
     cursor: pointer;
     width: 100%;
     height: 100%;
 }
- 
+
 .dropdown-content {
     position: absolute;
     top: 100%;
-    left: 0;
-    min-width: 160px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s;
     pointer-events: none;
     border-radius: 0.5rem;
+    right: 0;
+    left: auto;
+    width: 15rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -157,18 +165,16 @@ a:visited {
 
 /* Links inside the dropdown */
 .dropdown-content a {
+  background-image: url(/images/bground.jpg);
   color: black;
   text-decoration: none;
   display: block;
   border: solid 1px black;
   text-align: left;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.1rem;
+ 
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -176,8 +182,98 @@ a:visited {
     display: block;
 }
 
-/* classes above this------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.Projects {
+    box-sizing: border-box;
+    text-align: center;
+}
 
+.slideshow-container {
+    width: 50%;
+    height: 40%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
 
+/* Caption text */
+.slidesText {
+  font-size: 1rem;
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+
+}
+
+.Writings {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.largeText {
+  font-size: 1.5rem;
+}
+
+.writingContent {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.writingContent a{
+  padding: 0.5rem;
+}
+
+.projectContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.projectDesc {
+    width: 60ch;
+    font-size: 1.2rem;
+    line-height: 1.3;
+} 
+
+.projectTitles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.projectImg {
+    border: solid black;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+  /* classes above this------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */

@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<header>
+<header class="headerContainer">
     <figure>
         <img src="images/logo.png">
-        <h1>1984 Essay</h1>
     </figure>
-    <figure>
+    <figure class="titleContainer">
         <img src="images/titleoutline.png">
+        <h1 class="title">1984 Essay</h1>
     </figure>
-    <figure>
-        <img src="images/thumbs up 1.png">
+    <figure class="qualityContainer">
+        <img src="images/thumbsUp.png">
         <p class="headerCaption">Quality Guaranteed</p>
     </figure>
 </header>
@@ -25,9 +26,10 @@
     <p class="smallText">Price: 3 Cents</p>
 </article>
 <hr>
-<nav class="navigation">
-    <button onlclick="dropdown()" class="drpbtn"></button>
-    <div id="dropdown" class="dropdownContent">
+<nav class="dropdown">
+    <button onclick="myFunction()" class="dropbtn"><img src="/images/arrow.png" height="100%" widt="100%"></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="/index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="project1.html">Project: Trion Supercars</a>
         <a href="project2.html">Project: Budget Calculator</a>
@@ -41,12 +43,13 @@
     </div>
 </nav>
 <body>
-    <section>
+    <h2 class="projectTitles">Writing Description</h2>
+    <section class="projectContainer">
         <figure>
-            <img src="images/1984Essay.png">
+            <img src="/images/1984Essay.jpg" width="800px">
         </figure>
         <article>
-            <p>
+            <p class="projectDesc">
                 Here is a sample of one of the many written works of Cameron Jennings. 
                 The focus of this work is the societal effects of the technology within the George Orwell novel 1984 and how these technologies compare to the current real world tech. Within this essay Jennings discussed how the current technology we enjoy is not all that different from that seen in 1984. The essay discusses how a dystopia can form based on who uses technology, not what technology exists. Throughout this essay Jennings pulls from additional sources outside of 1984 which include WIRED articles and reports on law enforcement and their use of technology. 
             </p>
