@@ -8,7 +8,7 @@
 </head>
 <header class="headerContainer">
     <figure>
-        <img src="images/logo.png">
+        <a href="/index.html"><img src="images/logo.png"></a>
     </figure>
     <figure class="titleContainer">
         <img src="images/titleoutline.png">
@@ -30,6 +30,8 @@
     <button onclick="myFunction()" class="dropbtn"><img src="/images/arrow.png" height="100%" widt="100%"></button>
     <div id="myDropdown" class="dropdown-content">
         <a href="/index.html">Home</a>
+        <a href="aboutMe.html">About Cameron Jennings</a>
+        <a href="contact.html">Contact Information</a>
         <a href="resume.html">Resume</a>
         <a href="project1.html">Project: Trion Supercars</a>
         <a href="project2.html">Project: Budget Calculator</a>
@@ -37,65 +39,26 @@
         <a href="project4.html">Project: Smart Homes</a>
         <a href="writingSample1.html">Writing Work: 1984 Essay</a>
         <a href="writingSample2.html">Writing Work: Perseverence Essay</a>
-        <a href="aboutMe.html">About Cameron Jennings</a>
-        <a href="contact.html">Contact Information</a>
         <a href="engineeringAdditionalWork.html">Engineering Work</a>
     </div>
 </nav>
 <body>
     <section class="resumeContent">
-        <div>
-            <h2><a href="/contact.html">Contact</a></h2>
-            <h2><a href="aboutMe.html">About Cameron Jennings</a></h2>
-            <h2>Skills</h2>
-            <ul>
-                <li>Website Design</li>
-                <li>CAD (Fusion 360, Onshape)</li>
-                <li>Engineering Design</li>
-                <li>Basic Mechanical Engineering</li>
-                <li>Basic Structural Engineering</li>
-                <li>Wireframing and Prototyping</li>
-                <li>Photoshop (Adobe)</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Education</h2>
-            <hr>
-            <article>
-                <h3>College Dual Enrollment</h3>
-                <p>
-                    Web Application Development
-                    IS-40A
-                    IS-40B
-                </p>
-                <h3>Honors and AP Classes</h3>
-                <p>
-                    AP World History (4 on test)
-                    Honors Principles of Engineering
-                    Honors Biology
-                    Honors Chemistry
-                    Honors Math 2 & 3
-                    Honors English 9
-                    Honors Comp Through Careers
-                    
-                </p>
-                <h3>Related Courses</h3>
-                <p>
-                    Intro to Engineering Design
-                </p>
+        <section class="aboutResume">
+            <article class="aContent">
+                <h2>Skills</h2>
+                <hr>
+                <p>Website Design</p>
+                <p>CAD (Fusion 360, Onshape)</p>
+                <p>Engineering Design</p>
+                <p>Basic Mechanical Engineering</p>
+                <p>Basic Structural Engineering</p>
+                <p>Wireframing and Prototyping</p>
+                <p>Photoshop (Adobe)</p>
             </article>
-            
-            <h2>Experience</h2>
-            <hr>
-            <article>
-                <h3>Website Development</h3>
-                <p>Worked in a team of 4 as a web developer to create a website for the company TRION Supercars. Personally developed the about us, scheduling, maintenance, and accessibility features/pages in the website.</p>
-                <h3>Robotic Design and Development</h3>
-                <p>Designed and developed an autonomous trash can to solve for litter in commercial and educational facilities/regions after events and meals. </p>
-            </article>
-
-            <h2>GPA</h2>
-            <article>
+            <article class="aContent">
+                <h2>GPA</h2>
+                <hr>
                 <h3>Junior Year</h3>
                 <p>4.1</p>
                 <h3>Sophomore Year</h3>
@@ -103,13 +66,50 @@
                 <h3>Freshman Year</h3>
                 <p>4.2</p>
             </article>
-
-            <h2>Additional Skills</h2>
-            <article>
+            <figure>
+                <img src="images/portrait.jpg">
+            </figure>
+        </section>
+        <section class="educationExperienceSkillsResume">
+            <article class="eesContent">
+                <h2>Education</h2>
+                <hr>
+                <h3>College Dual Enrollment</h3>
+                <p>
+                    Web Application Development
+                    IS-40A
+                    IS-40B
+                </p>
+                <h3>Honors and AP Classes</h3>
+                <p>AP World History (4 on test)</p>
+                <p>Honors Principles of Engineering</p>
+                <p>Honors Biology</p>
+                <p>Honors Chemistry</p>
+                <p>Honors Math 2 & 3</p>
+                <p>Honors English 9</p>
+                <p>Honors Comp Through Careers</p>
+                    
+                </p>
+                <h3>Related Courses</h3>
+                <p>
+                    Intro to Engineering Design
+                </p>
+            </article>
+            <article class="eesContent">
+                <h2>Experience</h2>
+                <hr>
+                <h3>Website Development</h3>
+                <p>Worked in a team of 4 as a web developer to create a website for the company TRION Supercars. Personally developed the about us, scheduling, maintenance, and accessibility features/pages in the website.</p>
+                <h3>Robotic Design and Development</h3>
+                <p>Designed and developed an autonomous trash can to solve for litter in commercial and educational facilities/regions after events and meals. </p>
+            </article>
+            <article class="eesContent">
+                <h2>Additional Skills</h2>
+                <hr>
                 <h3>Leadership</h3>
                 <p>Acted as a leader in the college level Engineering Design and Development class for the year long project during this current school year</p>
             </article>
-        </div>
+        </section>
     </section>
     <hr>
     <hr>
@@ -121,5 +121,6 @@
             <a href="contact.html">Contact Information</a>
         </p>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

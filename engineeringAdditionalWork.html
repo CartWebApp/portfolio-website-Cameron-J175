@@ -8,7 +8,7 @@
 </head>
 <header class="headerContainer">
     <figure>
-        <img src="images/logo.png">
+        <a href="/index.html"><img src="images/logo.png"></a>
     </figure>
     <figure class="titleContainer">
         <img src="images/titleoutline.png">
@@ -30,6 +30,8 @@
     <button onclick="myFunction()" class="dropbtn"><img src="/images/arrow.png" height="100%" widt="100%"></button>
     <div id="myDropdown" class="dropdown-content">
         <a href="/index.html">Home</a>
+        <a href="aboutMe.html">About Cameron Jennings</a>
+        <a href="contact.html">Contact Information</a>
         <a href="resume.html">Resume</a>
         <a href="project1.html">Project: Trion Supercars</a>
         <a href="project2.html">Project: Budget Calculator</a>
@@ -37,33 +39,39 @@
         <a href="project4.html">Project: Smart Homes</a>
         <a href="writingSample1.html">Writing Work: 1984 Essay</a>
         <a href="writingSample2.html">Writing Work: Perseverence Essay</a>
-        <a href="aboutMe.html">About Cameron Jennings</a>
-        <a href="contact.html">Contact Information</a>
         <a href="engineeringAdditionalWork.html">Engineering Work</a>
     </div>
 </nav>
 <body>
-    <section>
-        <figure>
-            <img src="/images/EngineeringWork1.jpg">
-        </figure>
-        <article>
+    <section class="engineeringContainer">
+        <article class="engineeringIntro">
+            <h2 class="projectTitles">Work Description</h2>
+            <hr>
             <p>
                 Here you can see the project that Cameron Jennings has worked on this school year. It is an autonomous trash can meant to help find a way to reduce litter in commercial and educational environemnts. Jennings worked on this project along with three other students in his engineering class at Buchanan High School. Jennings was in charge of the documentation, and helping in building the drive base and frame for this project.
             </p>
         </article>
-        <div>
+        <article class="engineeringDesc">
+            <p>
+                The robot that Jennings and his friends developed works through a coded system that utilizes an arduino, two motor conrolers, ultra sonic sensors, and a mecanum wheel metal drive base. The protype shown has a frame made out of PVC, duct tape, and a wooden base. The robot will move automatically along a set path and stop automatically if it detects an obstacle. 
+            </p>
             <figure>
-                <img src="/images/EngineeringWork2.jpg">
+                <img src="/images/EngineeringWork1.jpg" width="300px">
             </figure>
-            <article>
-                <p>
-                    The robot that Jennings and his friends developed works through a coded system that utilizes an arduino, two motor conrolers, ultra sonic sensors, and a mecanum wheel metal drive base. The protype shown has a frame made out of PVC, duct tape, and a wooden base. The robot will move automatically along a set path and stop automatically if it detects an obstacle. 
-                </p>
-            </article>
-        </div>
+        </article>
+        <article id="toggle" class="toggle1 executiveSummaryContainer">
+            <h2 class="projectTitles">Coquelicot Cans</h2>
+            <hr>
+            <p>
+                Litter in commercial and educational environments is a problem that affects everyone, with those in industrialized countries and lower class areas being affected to an even greater extent. This litter contributes to the growing amount of pollution that can disrupt jobs, learning, and people’s futures.
+            </p>
+            <p>
+                We, Coquelicot Cans, will dedicate ourselves, throughout this year, to trying to provide a rein for this problem. While there already exists many possible solutions for litter, we will strive to create something that is unique, and stands out from the rest. We will create a solution that can make going to school and out to shop even a bit more enjoyable and visibly pleasing.
+            </p>
+            <h2 class="projectTitles"><a href="https://docs.google.com/document/d/1YVd1SUAlsbNMzkmGlckF34Hf7I1VjWq3Y4S0Ceuyr7Q/edit?tab=t.0">View Coquelicot Cans' Portfolio</a></h2>
+        </article>
     </section>
-    <h2><a>More Details</a></h2>
+    <button onclick="toggleClasses()" class="engineeringDetailbtn">More Details</button>
     <hr>
     <hr>
     <footer>
@@ -74,5 +82,6 @@
             <a href="contact.html">Contact Information</a>
         </p>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

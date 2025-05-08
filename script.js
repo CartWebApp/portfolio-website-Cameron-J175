@@ -34,3 +34,15 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+// Will allow me to change the CSS via toggling
+function toggleClasses() {
+  let para = document.getElementById("toggle")
+  if(para.classList.contains("toggle1")) {
+    para.classList.remove("toggle1")
+  } else {
+    para.classList.add("toggle1")
+  }
+}
+
+
