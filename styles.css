@@ -201,7 +201,7 @@ header > figure > img {
 }
 
 .slideshow-container {
-    width: 50%;
+    width: 80%;
     height: 40%;
     position: relative;
     margin: auto;
@@ -215,6 +215,10 @@ header > figure > img {
   position: relative;
   display: flex;
   text-align: center;
+}
+
+.mySlides img {
+    width: 100%;
 }
 
 /* Caption text */
@@ -258,6 +262,10 @@ header > figure > img {
   align-items: center;
 }
 
+.writingContent img {
+    width: 80%;
+}
+
 .writingContent a{
   padding: 0.5rem;
 }
@@ -282,6 +290,7 @@ header > figure > img {
 
 .projectImg {
     border: solid black;
+    width: 800px;
 }
 
 .toggle1 {
@@ -340,19 +349,14 @@ header > figure > img {
     padding: 2rem;
 }
 
-.contactIcon {
+.Icon {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.contactIcon img {
+.Icon img {
     border: none;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
 }
 
 .resumeContent {
@@ -376,6 +380,254 @@ header > figure > img {
 .aContent,
 .eesContent {
     padding: 1rem;
+}
+
+.aboutMe {
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.aboutMe article {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.titleImage {
+    width: 30%;
+}
+
+.iconImg {
+    width: 15%;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .qualityContainer{
+        display: none;
+    }
+        
+    .titleContainer h1 {
+        position: absolute;
+    }
+
+    .headerCaption {
+        font-size: 1rem;
+    }
+
+    .logoImg {
+        margin-left: 42%;
+    }
+
+    .introText {
+        width: 90%;
+    }
+
+    .introImage {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .largeText {
+        font-size: 1.2rem;
+    }
+
+    .Icon {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .iconImg {
+        width: 100%;
+    }
+
+    .iconImgContact {
+        width: 2.3rem;
+    }
+
+    .aboutMe {
+        width: 70%
+    }
+
+    .educationExperienceSkillsResume {
+        width: 100%;
+    }
+
+    .aboutResume {
+        width: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .aContent {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%
+    }
+
+    .aContent hr {
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .projectImg {
+        width: 100%;
+    }
+
+    .projectDesc {
+        width: 80%;
+    }
+
+    .engineeringDesc {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        margin-left: -10%;
+    }
+
+    .engineeringIntro {
+        width: 90%;
+    }
+
+    .executiveSummaryContainer {
+        width: 80%;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-left: 80%;
+        position: fixed;
+        width: 20%;
+        height: 10%;
+        margin-top: -90%;
+      }
+
+      .resumeImage {
+        width: 40%;
+      }
+
+      .intro {
+        width: 100%
+      }
+}
+
+@media screen and (max-width: 1030px) and {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+
+    .qualityContainer {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-left: 90%;
+        position: fixed;
+        width: 10%;
+        height: 10%;
+    }
+
+    .Icon {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .iconImg {
+        width: 100%;
+    }
+
+    .iconImgContact {
+        width: 4rem;
+    }
+
+    .engineeringDesc {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        margin-left: -10%;
+    }
+
+    .engineeringIntro {
+        width: 90%;
+    }
+
+    .executiveSummaryContainer {
+        width: 80%;
+    }
+
+    .educationExperienceSkillsResume {
+        width: 80%;
+    }
+
+    .aboutResume {
+        width: 70%;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .aContent {
+        width: 100%
+    }
+
+    .aContent hr {
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .introText {
+        width: 35%;
+    }
+    
 }
 
   /* classes above this------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */

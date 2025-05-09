@@ -38,11 +38,7 @@ function showSlides() {
 // Will allow me to change the CSS via toggling
 function toggleClasses() {
   let para = document.getElementById("toggle")
-  if(para.classList.contains("toggle1")) {
-    para.classList.remove("toggle1")
-  } else {
-    para.classList.add("toggle1")
-  }
+  para.classList.toggle("toggle1")
 }
 
 
