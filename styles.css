@@ -547,7 +547,7 @@ header > figure > img {
       }
 }
 
-@media screen and (max-width: 1030px) and {
+@media screen and (max-width: 1030px) {
     h1 {
         font-size: 1.8rem;
     }
@@ -564,6 +564,10 @@ header > figure > img {
         font-size: 1.2rem;
     }
 
+    .Writings {
+        display: flex; 
+        flex-flow: column nowrap;
+    }
 
     .qualityContainer {
         display: none;
