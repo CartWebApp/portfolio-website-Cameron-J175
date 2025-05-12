@@ -174,6 +174,7 @@ header > figure > img {
   position: fixed;
   width: 5%;
   height: 8%;
+  z-index: 1000;
 }
 
 /* Links inside the dropdown */
@@ -249,6 +250,7 @@ header > figure > img {
 .Writings {
   text-align: center;
   display: flex;
+  align-items: center;
   flex-flow: column wrap;
 }
 
@@ -263,7 +265,7 @@ header > figure > img {
 }
 
 .writingContent img {
-    width: 80%;
+    width: 60%;
 }
 
 .writingContent a{
@@ -400,6 +402,28 @@ header > figure > img {
 
 .iconImg {
     width: 15%;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 5% auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 2s steps(35, end),
+      blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent; }
 }
 
 @keyframes fade {
@@ -547,7 +571,11 @@ header > figure > img {
       }
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 1030px) {
+=======
+@media screen and (max-width: 1030px) and (min-width: 601px) {
+>>>>>>> Stashed changes
     h1 {
         font-size: 1.8rem;
     }
