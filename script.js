@@ -37,8 +37,8 @@ function showSlides() {
 
 // Will allow me to change the CSS via toggling
 function toggleClasses() {
-  let para = document.getElementById("toggle")
-  para.classList.toggle("toggle1")
+  let para = document.getElementById("toggle");
+  para.classList.toggle("toggle1");
 }
 
 
