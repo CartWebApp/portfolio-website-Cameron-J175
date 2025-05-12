@@ -8,28 +8,33 @@ body {
     background-repeat: no-repeat;
 }
 
+button {
+    font-family: 'Cinzel';
+}
+
 p{
+    font-family: 'Cinzel';
     font-size: 1.2rem;
     line-height: 1.3;
 }
 
 h1{
+    font-family: 'Cinzel Decorative';
     font-size: 2rem;
 }
 
 h2{
+    font-family: 'Cinzel Decorative';
     font-size: 1.8rem;
 }
 
 h3 {
+    font-family: 'Cinzel Decorative';
     font-size: 1.5rem;
 }
 
-caption{
-    font-size: 0.8rem;
-}
-
 a {
+    font-family: 'Cinzel';
     transition: ease-out 0.3s;
     color: black;
 }
@@ -52,10 +57,10 @@ img {
     border: black solid;
 }
 
-
-/* normal above this---------------------------------------------------------------------------------------------------------------------- */
-
-/* ids above this------------------------------------------------------------------------------------------------------------------------ */
+.copeh2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 
 .largeLinkText {
     font-size: 1.5rem;
@@ -83,14 +88,15 @@ img {
     align-items: center;
     text-align: center;
     position: relative;
-    text-align: center;
+    justify-self: center;
+    right: 0.6%;
 }
+
 .titleContainer h1 {
     position: absolute;
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
     
 }
 
@@ -188,6 +194,7 @@ header > figure > img {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   padding-left: 0.1rem;
+  font-size: 0.85rem;
  
 }
 
@@ -286,7 +293,7 @@ header > figure > img {
 
 .projectTitles {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
 }
 
@@ -355,10 +362,7 @@ header > figure > img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-}
-
-.Icon img {
-    border: none;
+    align-items: center;
 }
 
 .resumeContent {
@@ -401,7 +405,13 @@ header > figure > img {
 }
 
 .iconImg {
-    width: 15%;
+    width: 5rem;
+    border: none;
+}
+
+.iconImgContact {
+    width: 4rem;
+    border: none;
 }
 
 .typewriter h1 {
@@ -571,11 +581,7 @@ header > figure > img {
       }
 }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 1030px) {
-=======
 @media screen and (max-width: 1030px) and (min-width: 601px) {
->>>>>>> Stashed changes
     h1 {
         font-size: 1.8rem;
     }
