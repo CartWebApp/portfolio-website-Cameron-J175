@@ -388,6 +388,16 @@ header > figure > img {
     padding: 1rem;
 }
 
+.resumeImage {
+    width: 100%;
+}
+
+.resumeImageContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 .aboutMe {
     display: flex;
     flex-flow: column wrap;
